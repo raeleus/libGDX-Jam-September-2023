@@ -1,0 +1,31 @@
+{
+"skeleton": {
+	"hash": "aAiTqEyZQR0",
+	"spine": "4.1.23",
+	"x": -31.87,
+	"y": -27.33,
+	"width": 219.5,
+	"height": 38.5,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/toothbrush", "bone": "root", "attachment": "game/toothbrush" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/toothbrush": {
+				"game/toothbrush": { "x": 77.88, "y": -8.08, "scaleX": 0.5, "scaleY": 0.5, "width": 439, "height": 77 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

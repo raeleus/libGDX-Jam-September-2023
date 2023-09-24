@@ -1,0 +1,2049 @@
+{
+"skeleton": {
+	"hash": "3xvgvRpW+dM",
+	"spine": "4.1.23",
+	"x": -33.36,
+	"y": -19.37,
+	"width": 72.48,
+	"height": 75.84,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "body", "parent": "root", "length": 32.4, "rotation": -0.28, "x": 1.95, "y": -24.14 },
+	{ "name": "body2", "parent": "body", "length": 17.09, "rotation": -151.96, "x": -11.14, "y": 32.44 },
+	{ "name": "body3", "parent": "body2", "length": 11.71, "rotation": 80.06, "x": 17.28, "y": 0.35 },
+	{ "name": "body4", "parent": "body", "length": 13.89, "rotation": -27.02, "x": 13.13, "y": 35.35 },
+	{ "name": "body5", "parent": "body4", "length": 12.76, "rotation": -66.28, "x": 13.89 },
+	{ "name": "target-right", "parent": "body", "rotation": 0.28, "x": 24.77, "y": 16.3, "color": "ff3f00ff" },
+	{ "name": "target-left", "parent": "body", "rotation": 0.28, "x": -22.59, "y": 12.88, "color": "ff3f00ff" },
+	{ "name": "blood", "parent": "body", "length": 36.31, "rotation": -88.63, "x": -0.73, "y": 43.47 },
+	{ "name": "face", "parent": "body", "length": 30.18, "rotation": 90.28, "x": -0.12, "y": 48.55 },
+	{ "name": "indicator", "parent": "root", "length": 22.77, "x": 0.41, "y": 66.07 },
+	{ "name": "hearts", "parent": "root", "length": 25.34, "rotation": 1.45, "x": -0.23, "y": -37.83 }
+],
+"slots": [
+	{ "name": "body", "bone": "body", "dark": "000000", "attachment": "body" },
+	{ "name": "blood", "bone": "blood", "dark": "000000" },
+	{ "name": "face", "bone": "face", "dark": "000000", "attachment": "face" },
+	{ "name": "eyes", "bone": "face", "dark": "000000", "attachment": "game/eyes" },
+	{ "name": "hair", "bone": "face", "dark": "000000", "attachment": "hair" },
+	{ "name": "mouth", "bone": "face", "dark": "000000", "attachment": "game/mouth-happy" },
+	{ "name": "hand-left", "bone": "body3", "dark": "000000", "attachment": "game/hand" },
+	{ "name": "hand-right", "bone": "body5", "dark": "000000", "attachment": "game/hand" },
+	{ "name": "mouth overlay", "bone": "face", "dark": "000000", "attachment": "braces" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" },
+	{ "name": "clip", "bone": "root" },
+	{ "name": "game/xray", "bone": "indicator" }
+],
+"ik": [
+	{
+		"name": "target-left",
+		"order": 1,
+		"bones": [ "body2", "body3" ],
+		"target": "target-left"
+	},
+	{
+		"name": "target-right",
+		"bones": [ "body4", "body5" ],
+		"target": "target-right",
+		"bendPositive": false
+	}
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -14.02, -24.68, -14.02, 50.36, 19.01, 50.04, 19.97, -24.36 ]
+				}
+			},
+			"blood": {
+				"game/body-blood": {
+					"x": 17.33,
+					"y": 1.15,
+					"scaleX": 0.1875,
+					"scaleY": 0.1875,
+					"rotation": 88.91,
+					"width": 186,
+					"height": 189
+				}
+			},
+			"clip": {
+				"clip": {
+					"type": "clipping",
+					"end": "game/xray",
+					"vertexCount": 4,
+					"vertices": [ -38.18, 50.23, 42.01, 49.62, 41.09, 5.54, -39.1, 6.77 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"eyes": {
+				"game/eyes": {
+					"x": 13.55,
+					"y": -0.03,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 136,
+					"height": 79
+				},
+				"game/eyes-dead": {
+					"x": 13.55,
+					"y": -0.03,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 103,
+					"height": 53
+				},
+				"game/eyes-red": {
+					"x": 13.55,
+					"y": -0.03,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 136,
+					"height": 79
+				}
+			},
+			"face": {
+				"game/face-01": {
+					"x": 10.12,
+					"y": 0.78,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 268
+				}
+			},
+			"game/xray": {
+				"game/xray": { "x": 1.08, "y": -38.46, "scaleX": 0.5, "scaleY": 0.5, "width": 151, "height": 79 }
+			},
+			"hand-left": {
+				"game/hand": {
+					"x": 5.38,
+					"y": 3.15,
+					"scaleX": 0.1437,
+					"scaleY": -0.1437,
+					"rotation": -13.96,
+					"width": 194,
+					"height": 180
+				}
+			},
+			"hand-right": {
+				"game/hand": {
+					"x": 9.49,
+					"y": -1.72,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": 7.43,
+					"width": 194,
+					"height": 180
+				},
+				"game/hand-thumbs-down": {
+					"x": 9.89,
+					"y": -1.49,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": 95.09,
+					"width": 220,
+					"height": 236
+				},
+				"game/hand-thumbs-up": {
+					"x": 3.06,
+					"y": -1.71,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": 95.09,
+					"width": 209,
+					"height": 235
+				}
+			},
+			"mouth": {
+				"game/mouth-dead": {
+					"x": 0.24,
+					"y": -0.43,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 76,
+					"height": 26
+				},
+				"game/mouth-happy": {
+					"x": 0.9,
+					"y": -0.43,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 87,
+					"height": 21
+				},
+				"game/mouth-neutral": {
+					"x": 0.24,
+					"y": -0.43,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 67,
+					"height": 38
+				},
+				"game/mouth-sad": {
+					"x": 0.24,
+					"y": -0.43,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 87,
+					"height": 21
+				},
+				"game/mouth-smile": {
+					"x": 1.23,
+					"y": -0.43,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 109,
+					"height": 61
+				}
+			},
+			"mouth overlay": {
+				"game/mouth-black-tooth": {
+					"x": 1.11,
+					"y": -0.51,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 109,
+					"height": 61
+				},
+				"game/mouth-decay": {
+					"x": 1.11,
+					"y": -0.51,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 97,
+					"height": 51
+				}
+			}
+		}
+	},
+	{
+		"name": "body1",
+		"attachments": {
+			"body": {
+				"body": {
+					"name": "game/body-01",
+					"x": -0.77,
+					"y": 22.77,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": 0.28,
+					"width": 288,
+					"height": 337
+				}
+			},
+			"face": {
+				"face": {
+					"name": "game/face-01",
+					"x": 10.12,
+					"y": 0.78,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 268
+				}
+			}
+		}
+	},
+	{
+		"name": "body2",
+		"attachments": {
+			"body": {
+				"body": {
+					"name": "game/body-02",
+					"x": -0.77,
+					"y": 22.77,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": 0.28,
+					"width": 287,
+					"height": 337
+				}
+			},
+			"face": {
+				"face": {
+					"name": "game/face-02",
+					"x": 10.12,
+					"y": 0.78,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 268
+				}
+			}
+		}
+	},
+	{
+		"name": "body3",
+		"attachments": {
+			"body": {
+				"body": {
+					"name": "game/body-03",
+					"x": -0.77,
+					"y": 22.77,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": 0.28,
+					"width": 287,
+					"height": 337
+				}
+			},
+			"face": {
+				"face": {
+					"name": "game/face-03",
+					"x": 10.12,
+					"y": 0.78,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 268
+				}
+			}
+		}
+	},
+	{
+		"name": "body4",
+		"attachments": {
+			"body": {
+				"body": {
+					"name": "game/body-04",
+					"x": -0.77,
+					"y": 22.77,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": 0.28,
+					"width": 287,
+					"height": 337
+				}
+			},
+			"face": {
+				"face": {
+					"name": "game/face-04",
+					"x": 10.12,
+					"y": 0.78,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 268
+				}
+			}
+		}
+	},
+	{
+		"name": "body5",
+		"attachments": {
+			"body": {
+				"body": {
+					"name": "game/body-05",
+					"x": -0.77,
+					"y": 22.77,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": 0.28,
+					"width": 287,
+					"height": 337
+				}
+			},
+			"face": {
+				"face": {
+					"name": "game/face-05",
+					"x": 10.12,
+					"y": 0.78,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 268
+				}
+			}
+		}
+	},
+	{
+		"name": "body6",
+		"attachments": {
+			"body": {
+				"body": {
+					"name": "game/body-06",
+					"x": -0.77,
+					"y": 22.77,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": 0.28,
+					"width": 287,
+					"height": 337
+				}
+			},
+			"face": {
+				"face": {
+					"name": "game/face-06",
+					"x": 10.12,
+					"y": 0.78,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 268
+				}
+			}
+		}
+	},
+	{
+		"name": "body7",
+		"attachments": {
+			"body": {
+				"body": {
+					"name": "game/body-07",
+					"x": -0.77,
+					"y": 22.77,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": 0.28,
+					"width": 287,
+					"height": 337
+				}
+			},
+			"face": {
+				"face": {
+					"name": "game/face-07",
+					"x": 10.12,
+					"y": 0.78,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 268
+				}
+			}
+		}
+	},
+	{
+		"name": "body8",
+		"attachments": {
+			"body": {
+				"body": {
+					"name": "game/body-08",
+					"x": -0.77,
+					"y": 22.77,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": 0.28,
+					"width": 287,
+					"height": 337
+				}
+			},
+			"face": {
+				"face": {
+					"name": "game/face-08",
+					"x": 10.12,
+					"y": 0.78,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 268
+				}
+			}
+		}
+	},
+	{
+		"name": "braces1",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "ff0000ff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces2",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "ff9d00ff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces3",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "fdff00ff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces4",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "5bff00ff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces5",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "00ff9fff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces6",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "00ab20ff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces7",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "00fff8ff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces8",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "0073ffff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces9",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "1200b2ff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces10",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "6800ffff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces11",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "ca00ffff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces12",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "ff41c0ff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces13",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "747474ff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces14",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "000000ff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces15",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "99a400ff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "braces16",
+		"attachments": {
+			"mouth overlay": {
+				"braces": {
+					"name": "game/mouth-braces",
+					"color": "7a4700ff",
+					"x": 1.27,
+					"y": -0.53,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 91,
+					"height": 46
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-cop",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hat",
+					"x": 23.37,
+					"y": 0.84,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 187,
+					"height": 121
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-black1",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-black-01",
+					"x": 15.16,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 383,
+					"height": 240
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-black2",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-black-02",
+					"x": 14.9,
+					"y": 5.97,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 248,
+					"height": 268
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-black3",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-black-03",
+					"x": 16.95,
+					"y": 2.63,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 216,
+					"height": 207
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-black4",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-black-04",
+					"x": 15.16,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 262,
+					"height": 259
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-black5",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-black-05",
+					"x": 7.97,
+					"y": -0.19,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 252,
+					"height": 340
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-black6",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-black-06",
+					"x": 17.98,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 239,
+					"height": 295
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-blonde1",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-blonde-01",
+					"x": 13.62,
+					"y": 0.84,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 383,
+					"height": 240
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-blonde2",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-blonde-02",
+					"x": 14.39,
+					"y": 5.97,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 248,
+					"height": 268
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-blonde3",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-blonde-03",
+					"x": 17.21,
+					"y": 3.14,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 216,
+					"height": 207
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-blonde4",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-blonde-04",
+					"x": 15.16,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 262,
+					"height": 259
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-blonde5",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-blonde-05",
+					"x": 8.74,
+					"y": -0.45,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 252,
+					"height": 340
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-blonde6",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-blonde-06",
+					"x": 20.55,
+					"y": 1.09,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 239,
+					"height": 295
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-brown1",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-brown-01",
+					"x": 15.16,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 383,
+					"height": 239
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-brown2",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-brown-02",
+					"x": 14.65,
+					"y": 5.2,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 248,
+					"height": 268
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-brown3",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-brown-03",
+					"x": 17.21,
+					"y": 2.89,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 216,
+					"height": 207
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-brown4",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-brown-04",
+					"x": 15.16,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 262,
+					"height": 259
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-brown5",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-brown-05",
+					"x": 7.2,
+					"y": -0.45,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 252,
+					"height": 340
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-brown6",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-brown-06",
+					"x": 18.24,
+					"y": 0.84,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 239,
+					"height": 295
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-red1",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-red-01",
+					"x": 14.39,
+					"y": 0.84,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 383,
+					"height": 240
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-red2",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-red-02",
+					"x": 14.9,
+					"y": 4.94,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 248,
+					"height": 268
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-red3",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-red-03",
+					"x": 16.95,
+					"y": 2.89,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 216,
+					"height": 207
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-red4",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-red-04",
+					"x": 15.16,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 262,
+					"height": 259
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-red5",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-red-05",
+					"x": 8.23,
+					"y": -0.19,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 252,
+					"height": 340
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-female-red6",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-female-red-06",
+					"x": 19.26,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 239,
+					"height": 295
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-black1",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-black-01",
+					"x": 23.37,
+					"y": 0.84,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 192,
+					"height": 193
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-black2",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-black-02",
+					"x": 21.57,
+					"y": 0.84,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 204,
+					"height": 194
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-black3",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-black-03",
+					"x": 18.75,
+					"y": 1.09,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 161
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-black4",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-black-04",
+					"x": 22.09,
+					"y": 0.84,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 224,
+					"height": 172
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-black5",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-black-05",
+					"x": 22.6,
+					"y": 1.35,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 208,
+					"height": 231
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-black6",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-black-06",
+					"x": 24.14,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 204,
+					"height": 149
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-blonde1",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-blonde-01",
+					"x": 24.91,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 192,
+					"height": 193
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-blonde2",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-blonde-02",
+					"x": 20.29,
+					"y": 0.84,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 204,
+					"height": 194
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-blonde3",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-blonde-03",
+					"x": 19.01,
+					"y": 0.84,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 161
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-blonde4",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-blonde-04",
+					"x": 22.09,
+					"y": 1.35,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 224,
+					"height": 173
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-blonde5",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-blonde-05",
+					"x": 23.88,
+					"y": 1.61,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 208,
+					"height": 231
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-blonde6",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-blonde-06",
+					"x": 24.14,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 204,
+					"height": 150
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-brown1",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-brown-01",
+					"x": 24.91,
+					"y": 1.09,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 192,
+					"height": 193
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-brown2",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-brown-02",
+					"x": 21.57,
+					"y": 0.32,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 204,
+					"height": 194
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-brown3",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-brown-03",
+					"x": 18.75,
+					"y": 1.09,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 161
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-brown4",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-brown-04",
+					"x": 21.06,
+					"y": 0.84,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 224,
+					"height": 172
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-brown5",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-brown-05",
+					"x": 22.86,
+					"y": 1.61,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 208,
+					"height": 231
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-brown6",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-brown-06",
+					"x": 23.63,
+					"y": 1.09,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 204,
+					"height": 150
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-red1",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-red-01",
+					"x": 24.91,
+					"y": 0.84,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 192,
+					"height": 193
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-red2",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-red-02",
+					"x": 20.03,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 204,
+					"height": 194
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-red3",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-red-03",
+					"x": 19.01,
+					"y": 0.84,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 198,
+					"height": 161
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-red4",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-red-04",
+					"x": 21.57,
+					"y": 1.35,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 224,
+					"height": 173
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-red5",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-red-05",
+					"x": 21.57,
+					"y": 1.35,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 208,
+					"height": 231
+				}
+			}
+		}
+	},
+	{
+		"name": "hair-male-red6",
+		"attachments": {
+			"hair": {
+				"hair": {
+					"name": "game/hair-male-red-06",
+					"x": 23.63,
+					"y": 0.58,
+					"scaleX": 0.1437,
+					"scaleY": 0.1437,
+					"rotation": -90,
+					"width": 204,
+					"height": 150
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"bleed": {
+		"slots": {
+			"blood": {
+				"rgba2": [
+					{ "light": "ffffff00", "dark": "000000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" }
+				],
+				"attachment": [
+					{ "name": "game/body-blood" }
+				]
+			},
+			"eyes": {
+				"attachment": [
+					{ "name": "game/eyes-dead" }
+				]
+			},
+			"mouth": {
+				"attachment": [
+					{ "name": "game/mouth-dead" }
+				]
+			}
+		},
+		"bones": {
+			"target-left": {
+				"translate": [
+					{ "x": 7.39, "y": -10.9 }
+				]
+			},
+			"target-right": {
+				"translate": [
+					{ "x": -11.14, "y": -10.8 }
+				]
+			}
+		}
+	},
+	"dead": {
+		"slots": {
+			"eyes": {
+				"attachment": [
+					{ "name": "game/eyes-dead" }
+				]
+			},
+			"mouth": {
+				"attachment": [
+					{ "name": "game/mouth-dead" }
+				]
+			}
+		}
+	},
+	"highlight": {
+		"slots": {
+			"blood": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ff8686" }
+				]
+			},
+			"body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ff8686" }
+				]
+			},
+			"eyes": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ff8686" }
+				]
+			},
+			"face": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ff8686" }
+				]
+			},
+			"hair": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ff8686" }
+				]
+			},
+			"hand-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ff8686" }
+				]
+			},
+			"hand-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ff8686" }
+				]
+			},
+			"mouth": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ff8686" }
+				]
+			},
+			"mouth overlay": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ff8686" }
+				]
+			}
+		}
+	},
+	"mouth-happy": {
+		"slots": {
+			"mouth": {
+				"attachment": [
+					{ "name": "game/mouth-happy" }
+				]
+			}
+		}
+	},
+	"mouth-neutral": {
+		"slots": {
+			"mouth": {
+				"attachment": [
+					{ "name": "game/mouth-neutral" }
+				]
+			}
+		}
+	},
+	"mouth-sad": {
+		"slots": {
+			"mouth": {
+				"attachment": [
+					{ "name": "game/mouth-sad" }
+				]
+			}
+		}
+	},
+	"mouth-smile": {
+		"slots": {
+			"mouth": {
+				"attachment": [
+					{ "name": "game/mouth-smile" }
+				]
+			}
+		}
+	},
+	"no-highlight": {
+		"slots": {
+			"blood": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"eyes": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"face": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"hair": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"hand-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"hand-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"mouth": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"mouth overlay": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"overlay-black": {
+		"slots": {
+			"mouth overlay": {
+				"attachment": [
+					{ "name": "game/mouth-black-tooth" }
+				]
+			}
+		}
+	},
+	"overlay-decay": {
+		"slots": {
+			"mouth overlay": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "ffffff00", "dark": "000000" }
+				],
+				"attachment": [
+					{ "name": "game/mouth-decay" }
+				]
+			}
+		}
+	},
+	"pickedup": {
+		"bones": {
+			"body": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": -28.86 },
+					{ "time": 0.3333 },
+					{ "time": 0.5, "value": 36.23 },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{ "y": -42.77 },
+					{ "time": 0.1667, "x": -22.82, "y": -35.92 },
+					{ "time": 0.3333, "y": -42.77 },
+					{ "time": 0.5, "x": 28.66, "y": -33.39 },
+					{ "time": 0.6667, "y": -42.77 }
+				]
+			},
+			"face": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": 28.86 },
+					{ "time": 0.3333 },
+					{ "time": 0.5, "value": -36.23 },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.0333, "x": -0.2, "y": -1.14 },
+					{ "time": 0.0667, "x": -0.21, "y": -1.82 },
+					{ "time": 0.1, "x": -0.15, "y": -2.01 },
+					{ "time": 0.1333, "x": -0.09, "y": -1.72 },
+					{ "time": 0.1667, "x": -0.14, "y": -0.95 },
+					{ "time": 0.2, "x": -0.09, "y": -1.72 },
+					{ "time": 0.2333, "x": -0.15, "y": -2.01 },
+					{ "time": 0.2667, "x": -0.21, "y": -1.82 },
+					{ "time": 0.3, "x": -0.2, "y": -1.14 },
+					{ "time": 0.3333 },
+					{ "time": 0.3667, "x": 0.21, "y": -1.54 },
+					{ "time": 0.4, "x": 0.12, "y": -2.34 },
+					{ "time": 0.4333, "x": -0.07, "y": -2.36 },
+					{ "time": 0.4667, "x": -0.18, "y": -1.6 },
+					{ "time": 0.5, "x": 0.01, "y": -0.09 },
+					{ "time": 0.5333, "x": -0.18, "y": -1.6 },
+					{ "time": 0.5667, "x": -0.07, "y": -2.36 },
+					{ "time": 0.6, "x": 0.12, "y": -2.34 },
+					{ "time": 0.6333, "x": 0.21, "y": -1.54 },
+					{ "time": 0.6667 }
+				]
+			},
+			"target-right": {
+				"translate": [
+					{ "x": 29.14, "y": 56.19 },
+					{ "time": 0.1667, "x": 37.65, "y": 13.61 },
+					{ "time": 0.3333, "x": 27.27, "y": 51.21 },
+					{ "time": 0.5, "x": 18.8, "y": -26.04 },
+					{ "time": 0.6667, "x": 29.14, "y": 56.19 }
+				]
+			},
+			"target-left": {
+				"translate": [
+					{ "x": -22.8, "y": -2.38 },
+					{ "time": 0.1667, "x": -31.46, "y": 41.28 },
+					{ "time": 0.3333, "x": -27.73, "y": -12.51 },
+					{ "time": 0.5, "x": 2.2, "y": 77.52 },
+					{ "time": 0.6667, "x": -22.8, "y": -2.38 }
+				]
+			},
+			"indicator": {
+				"translate": [
+					{ "y": -43.98 }
+				]
+			},
+			"hearts": {
+				"translate": [
+					{ "y": -43.98 }
+				]
+			}
+		}
+	},
+	"stand": {
+		"bones": {
+			"target-right": {
+				"translate": [
+					{
+						"curve": [ 0.111, 0, 0.222, 2.35, 0.111, 0, 0.222, 9.62 ]
+					},
+					{
+						"time": 0.3333,
+						"x": 2.35,
+						"y": 9.62,
+						"curve": [ 0.444, 2.35, 0.556, 0, 0.444, 9.62, 0.556, 0 ]
+					},
+					{ "time": 0.6667 }
+				]
+			},
+			"target-left": {
+				"translate": [
+					{
+						"curve": [ 0.111, 0, 0.222, -4.48, 0.111, 0, 0.222, 9.58 ]
+					},
+					{
+						"time": 0.3333,
+						"x": -4.48,
+						"y": 9.58,
+						"curve": [ 0.444, -4.48, 0.556, 0, 0.444, 9.58, 0.556, 0 ]
+					},
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	},
+	"thumbs-down": {
+		"slots": {
+			"hand-right": {
+				"attachment": [
+					{ "name": "game/hand-thumbs-down" }
+				]
+			}
+		},
+		"bones": {
+			"target-right": {
+				"translate": [
+					{ "x": -2.71, "y": 17.37 }
+				]
+			}
+		}
+	},
+	"thumbs-up": {
+		"slots": {
+			"hand-right": {
+				"attachment": [
+					{ "name": "game/hand-thumbs-up" }
+				]
+			}
+		},
+		"bones": {
+			"target-right": {
+				"translate": [
+					{ "x": -2.71, "y": 17.37 }
+				]
+			}
+		}
+	},
+	"walk": {
+		"bones": {
+			"body": {
+				"rotate": [
+					{
+						"value": 15.84,
+						"curve": [ 0.283, 15.84, 0.09, -20.87 ]
+					},
+					{
+						"time": 0.3333,
+						"value": -20.87,
+						"curve": [ 0.617, -20.87, 0.423, 15.68 ]
+					},
+					{ "time": 0.6667, "value": 15.84 }
+				]
+			},
+			"target-right": {
+				"translate": [
+					{
+						"x": 0.74,
+						"y": 19.19,
+						"curve": [ 0.111, 0.74, 0.222, -9.08, 0.111, 19.19, 0.222, -5.6 ]
+					},
+					{
+						"time": 0.3333,
+						"x": -9.08,
+						"y": -5.6,
+						"curve": [ 0.444, -9.08, 0.556, 0.74, 0.444, -5.6, 0.556, 19.19 ]
+					},
+					{ "time": 0.6667, "x": 0.74, "y": 19.19 }
+				]
+			},
+			"target-left": {
+				"translate": [
+					{
+						"x": 10.36,
+						"y": -8.25,
+						"curve": [ 0.111, 10.36, 0.222, -4.93, 0.111, -8.25, 0.222, 15.57 ]
+					},
+					{
+						"time": 0.3333,
+						"x": -4.93,
+						"y": 15.57,
+						"curve": [ 0.444, -4.93, 0.556, 10.36, 0.444, 15.57, 0.556, -8.25 ]
+					},
+					{ "time": 0.6667, "x": 10.36, "y": -8.25 }
+				]
+			}
+		}
+	},
+	"xray": {
+		"slots": {
+			"clip": {
+				"attachment": [
+					{ "name": "clip" }
+				]
+			},
+			"game/xray": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 2, "color": "35ff00ff" }
+				],
+				"attachment": [
+					{ "time": 0.0333, "name": "game/xray" }
+				]
+			}
+		},
+		"attachments": {
+			"default": {
+				"clip": {
+					"clip": {
+						"deform": [
+							{
+								"offset": 5,
+								"vertices": [ 41.93361, 0, 41.93361 ]
+							},
+							{ "time": 2 }
+						]
+					}
+				}
+			}
+		}
+	},
+	"zoomed": {
+		"bones": {
+			"body": {
+				"translate": [
+					{ "y": -309.7 }
+				],
+				"scale": [
+					{ "x": 6, "y": 6 }
+				]
+			}
+		}
+	},
+	"zoomed-braces": {
+		"bones": {
+			"body": {
+				"translate": [
+					{ "x": -35.32, "y": -259.77 }
+				],
+				"scale": [
+					{ "x": 6, "y": 6 }
+				]
+			}
+		}
+	}
+}
+}

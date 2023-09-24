@@ -1,0 +1,353 @@
+{
+"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	"font": {
+		"file": "font.fnt",
+		"scaledSize": -1,
+		"markupEnabled": false,
+		"flip": false
+	},
+	"label": {
+		"file": "label.fnt",
+		"scaledSize": -1,
+		"markupEnabled": false,
+		"flip": false
+	},
+	"title": {
+		"file": "title.fnt",
+		"scaledSize": -1,
+		"markupEnabled": false,
+		"flip": false
+	}
+},
+"com.badlogic.gdx.graphics.Color": {
+	"black": {
+		"r": 0,
+		"g": 0,
+		"b": 0,
+		"a": 1
+	},
+	"cyan": {
+		"r": 0,
+		"g": 0.73333335,
+		"b": 1,
+		"a": 1
+	},
+	"dark-gray": {
+		"r": 0.23529412,
+		"g": 0.23529412,
+		"b": 0.23529412,
+		"a": 1
+	},
+	"gold": {
+		"r": 0.59607846,
+		"g": 0.62352943,
+		"b": 0,
+		"a": 1
+	},
+	"green": {
+		"r": 0.10980392,
+		"g": 1,
+		"b": 0.019607844,
+		"a": 1
+	},
+	"light-gray": {
+		"r": 0.8117647,
+		"g": 0.8117647,
+		"b": 0.8117647,
+		"a": 1
+	},
+	"purple": {
+		"r": 0.5254902,
+		"g": 0,
+		"b": 0.52156866,
+		"a": 1
+	},
+	"white": {
+		"r": 1,
+		"g": 1,
+		"b": 1,
+		"a": 1
+	}
+},
+"com.ray3k.tenpatch.TenPatchDrawable": {
+	"background-tile-10": {
+		"region": "background-tile",
+		"horizontalStretchAreas": [ 0, 64 ],
+		"verticalStretchAreas": [ 0, 73 ],
+		"tiling": true,
+		"minWidth": 65,
+		"minHeight": 74,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 5,
+		"offsetYspeed": -5,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"scroll-horizontal-10": {
+		"region": "scroll-horizontal",
+		"horizontalStretchAreas": [ 10, 59 ],
+		"verticalStretchAreas": [ 10, 10 ],
+		"tiling": false,
+		"minWidth": 70,
+		"minHeight": 21,
+		"rightWidth": 6,
+		"leftWidth": 6,
+		"bottomHeight": 2,
+		"topHeight": 2,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"scroll-vertical-10": {
+		"region": "scroll-vertical",
+		"horizontalStretchAreas": [ 9, 10 ],
+		"verticalStretchAreas": [ 9, 59 ],
+		"tiling": false,
+		"minWidth": 20,
+		"minHeight": 69,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"slider-bg-10": {
+		"region": "slider-bg",
+		"horizontalStretchAreas": [ 6, 227 ],
+		"verticalStretchAreas": [ 5, 6 ],
+		"tiling": false,
+		"minWidth": 235,
+		"minHeight": 12,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"text-button-10": {
+		"region": "text-button",
+		"horizontalStretchAreas": [ 30, 198 ],
+		"verticalStretchAreas": [ 29, 29 ],
+		"tiling": false,
+		"minWidth": 230,
+		"minHeight": 60,
+		"rightWidth": 8,
+		"leftWidth": 7,
+		"bottomHeight": 4,
+		"topHeight": 3,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"window-10": {
+		"region": "window",
+		"horizontalStretchAreas": [ 19, 81 ],
+		"verticalStretchAreas": [ 19, 66 ],
+		"tiling": false,
+		"minWidth": 100,
+		"minHeight": 86,
+		"rightWidth": 6,
+		"leftWidth": 7,
+		"bottomHeight": 7,
+		"topHeight": 7,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"text-button-down-10": {
+		"region": "text-button",
+		"color": "dark-gray",
+		"horizontalStretchAreas": [ 30, 198 ],
+		"verticalStretchAreas": [ 29, 29 ],
+		"tiling": false,
+		"minWidth": 230,
+		"minHeight": 60,
+		"rightWidth": 8,
+		"leftWidth": 7,
+		"bottomHeight": 4,
+		"topHeight": 3,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"text-button-over-10": {
+		"region": "text-button",
+		"color": "light-gray",
+		"horizontalStretchAreas": [ 30, 198 ],
+		"verticalStretchAreas": [ 29, 29 ],
+		"tiling": false,
+		"minWidth": 230,
+		"minHeight": 60,
+		"rightWidth": 8,
+		"leftWidth": 7,
+		"bottomHeight": 4,
+		"topHeight": 3,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"queue-number-bg-10": {
+		"region": "queue-number-bg",
+		"horizontalStretchAreas": [ 5, 38 ],
+		"verticalStretchAreas": [ 5, 38 ],
+		"tiling": false,
+		"minWidth": 44,
+		"minHeight": 44,
+		"rightWidth": 8,
+		"leftWidth": 8,
+		"bottomHeight": 8,
+		"topHeight": 8,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"progressbar-knob-10": {
+		"region": "progressbar-knob",
+		"horizontalStretchAreas": [ 0, 62 ],
+		"verticalStretchAreas": [ 0, 308 ],
+		"tiling": true,
+		"minWidth": 63,
+		"minHeight": 309,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle": {
+	"default": {
+		"up": "text-button-10",
+		"down": "text-button-down-10",
+		"over": "text-button-over-10"
+	},
+	"change-right": {
+		"up": "button-change-right",
+		"down": "button-change-right-pressed",
+		"over": "button-change-right-over"
+	},
+	"change-left": {
+		"up": "button-change-left",
+		"down": "button-change-left-pressed",
+		"over": "button-change-left-over"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	"default": {
+		"font": "label"
+	},
+	"button": {
+		"font": "font"
+	},
+	"title": {
+		"font": "title"
+	},
+	"money": {
+		"font": "label",
+		"fontColor": "green"
+	},
+	"time": {
+		"font": "label",
+		"fontColor": "gold"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ProgressBar$ProgressBarStyle": {
+	"default-horizontal": {
+		"background": "progressbar-bg",
+		"knob": "progressbar-knob"
+	},
+	"default-vertical": {
+		"background": "progressbar-bg",
+		"knobBefore": "progressbar-knob-10"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle": {
+	"default": {
+		"hScrollKnob": "scroll-horizontal-10",
+		"vScrollKnob": "scroll-vertical-10"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle": {
+	"default-horizontal": {
+		"background": "slider-bg-10",
+		"knob": "slider-knob"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
+	"default": {
+		"font": "font",
+		"up": "text-button-10",
+		"down": "text-button-down-10",
+		"over": "text-button-over-10"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle": {
+	"default": {
+		"label": "default"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
+	"default": {
+		"background": "window-10",
+		"titleFont": "font"
+	}
+}
+}

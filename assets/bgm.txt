@@ -1,0 +1,4 @@
+bgm/audio-sample.mp3
+bgm/game.ogg
+bgm/horror.ogg
+bgm/menu.ogg

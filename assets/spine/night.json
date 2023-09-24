@@ -1,0 +1,49 @@
+{
+"skeleton": {
+	"hash": "aB+FH6Or7zI",
+	"spine": "4.1.23",
+	"x": -193,
+	"y": -74.75,
+	"width": 386,
+	"height": 149.5,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "scaleX": 0.5, "scaleY": 0.5 }
+],
+"slots": [
+	{ "name": "game/night", "bone": "root", "attachment": "game/night" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/night": {
+				"game/night": { "width": 772, "height": 299 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/night": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			}
+		}
+	},
+	"nightfall": {
+		"slots": {
+			"game/night": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 1, "color": "ffffffff" }
+				]
+			}
+		}
+	}
+}
+}

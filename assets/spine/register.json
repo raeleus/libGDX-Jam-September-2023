@@ -1,0 +1,48 @@
+{
+"skeleton": {
+	"hash": "ujvOmWd3kC0",
+	"spine": "4.1.23",
+	"x": -32.5,
+	"y": -37.75,
+	"width": 65,
+	"height": 75.5,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/register", "bone": "root", "dark": "000000", "attachment": "game/register" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -30.93, -38.22, -30.13, 19.1, 33.16, 19.5, 32.36, -37.82 ]
+				}
+			},
+			"game/register": {
+				"game/register": { "scaleX": 0.5, "scaleY": 0.5, "width": 130, "height": 151 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {},
+	"highlight": {
+		"slots": {
+			"game/register": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "da7acb" }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,39 @@
+{
+"skeleton": {
+	"hash": "atTh0CruZ5k",
+	"spine": "4.1.23",
+	"x": -22.31,
+	"y": -165.97,
+	"width": 173.62,
+	"height": 189.93,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/scalpel", "bone": "root", "attachment": "game/scalpel" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/scalpel": {
+				"game/scalpel": {
+					"x": 64.5,
+					"y": -71,
+					"scaleX": 0.5,
+					"scaleY": 0.5,
+					"rotation": -48.3,
+					"width": 458,
+					"height": 57
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

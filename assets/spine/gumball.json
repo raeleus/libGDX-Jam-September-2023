@@ -1,0 +1,78 @@
+{
+"skeleton": {
+	"hash": "0DwQnAQLOlo",
+	"spine": "4.1.23",
+	"x": -8.77,
+	"y": -7.7,
+	"width": 16.5,
+	"height": 16.5,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/gumball", "parent": "root", "length": 39.03, "rotation": -0.48, "x": -0.63, "y": 1.33 }
+],
+"slots": [
+	{ "name": "game/gumball", "bone": "game/gumball", "dark": "000000", "attachment": "game/gumball" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -17.64, -18.57, -18.14, 17.27, 17.09, 17.77, 17.09, -18.57 ]
+				}
+			},
+			"game/gumball": {
+				"game/gumball": {
+					"x": 0.12,
+					"y": -0.78,
+					"scaleX": 0.5,
+					"scaleY": 0.5,
+					"rotation": 0.48,
+					"width": 33,
+					"height": 33
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {},
+	"highlight": {
+		"slots": {
+			"game/gumball": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "da7acb" }
+				]
+			}
+		}
+	},
+	"spawn": {
+		"slots": {
+			"game/gumball": {
+				"rgba2": [
+					{ "light": "ffffff00", "dark": "000000" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		},
+		"bones": {
+			"game/gumball": {
+				"translate": [
+					{
+						"y": 71.83,
+						"curve": [ 0.111, 0, 0.222, 0, 0.111, 71.83, 0.312, 28.47 ]
+					},
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	}
+}
+}

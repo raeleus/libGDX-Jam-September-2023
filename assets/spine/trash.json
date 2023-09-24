@@ -1,0 +1,89 @@
+{
+"skeleton": {
+	"hash": "zScZmFh6xwg",
+	"spine": "4.1.23",
+	"x": -30.75,
+	"y": -46.75,
+	"width": 61.5,
+	"height": 93.5,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/trash", "parent": "root", "length": 54.94, "rotation": 0.52, "x": -1.78, "y": -36.37 }
+],
+"slots": [
+	{ "name": "game/trash", "bone": "game/trash", "dark": "000000", "attachment": "game/trash" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -26.86, -38, -27.75, 38.1, 24.84, 37.43, 24.39, -37.33 ]
+				}
+			},
+			"game/trash": {
+				"game/trash": {
+					"x": 2.1,
+					"y": 36.36,
+					"scaleX": 0.5,
+					"scaleY": 0.5,
+					"rotation": -0.52,
+					"width": 123,
+					"height": 187
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {},
+	"highlight": {
+		"slots": {
+			"game/trash": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "da7acb" }
+				]
+			}
+		}
+	},
+	"shake": {
+		"bones": {
+			"game/trash": {
+				"rotate": [
+					{
+						"curve": [ 0.067, 4.88, 0.133, 14.63 ]
+					},
+					{
+						"time": 0.2,
+						"value": 14.63,
+						"curve": [ 0.267, 14.63, 0.333, -16 ]
+					},
+					{
+						"time": 0.4,
+						"value": -16,
+						"curve": [ 0.467, -16, 0.533, 7.86 ]
+					},
+					{
+						"time": 0.6,
+						"value": 7.86,
+						"curve": [ 0.667, 7.86, 0.733, -3.79 ]
+					},
+					{
+						"time": 0.8,
+						"value": -3.79,
+						"curve": [ 0.867, -3.79, 0.933, -1.26 ]
+					},
+					{ "time": 1 }
+				]
+			}
+		}
+	}
+}
+}

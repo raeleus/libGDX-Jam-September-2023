@@ -1,0 +1,57 @@
+{
+"skeleton": {
+	"hash": "TDle89fcgis",
+	"spine": "4.1.23",
+	"x": 42.34,
+	"y": -132.48,
+	"width": 147.7,
+	"height": 219.13,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/hammer", "parent": "root", "length": 183.88, "rotation": 123.69, "x": 134.5, "y": -114 }
+],
+"slots": [
+	{ "name": "game/hammer", "bone": "game/hammer", "attachment": "game/hammer" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/hammer": {
+				"game/hammer": {
+					"x": 92.91,
+					"y": 0.55,
+					"scaleX": 0.5,
+					"scaleY": 0.5,
+					"rotation": 177.76,
+					"width": 407,
+					"height": 236
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {},
+	"ham": {
+		"bones": {
+			"game/hammer": {
+				"rotate": [
+					{
+						"curve": [ 0.033, -9.3, 0.067, -27.89 ]
+					},
+					{
+						"time": 0.1,
+						"value": -27.89,
+						"curve": [ 0.122, -27.89, 0.144, -8.2 ]
+					},
+					{ "time": 0.1667, "value": 1.64 }
+				]
+			}
+		}
+	}
+}
+}

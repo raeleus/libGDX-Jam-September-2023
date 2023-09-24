@@ -1,0 +1,126 @@
+{
+"skeleton": {
+	"hash": "QoLzi5DLJEw",
+	"spine": "4.1.23",
+	"x": -31.75,
+	"y": -38.5,
+	"width": 63.5,
+	"height": 77,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/chair-waiting", "bone": "root", "dark": "000000", "attachment": "chair" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox4" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox4": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -32.35, -53.86, -31.39, 53.89, 33.25, 53.57, 31.32, -54.5 ]
+				}
+			}
+		}
+	},
+	{
+		"name": "blue",
+		"attachments": {
+			"bbox": {
+				"bbox-skin": {
+					"name": "bbox",
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -19.15, -53.86, -18.19, 53.89, 20.94, 53.57, 19.01, -54.5 ]
+				}
+			},
+			"game/chair-waiting": {
+				"chair": { "name": "game/chair-blue", "scaleX": 0.5, "scaleY": 0.5, "width": 112, "height": 224 }
+			}
+		}
+	},
+	{
+		"name": "chair",
+		"attachments": {
+			"bbox": {
+				"bbox-skin": {
+					"name": "bbox",
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -19.79, -37.18, -19.79, 37.85, 19.97, 38.17, 19.33, -36.54 ]
+				}
+			},
+			"game/chair-waiting": {
+				"chair": { "name": "game/chair-waiting", "scaleX": 0.5, "scaleY": 0.5, "width": 127, "height": 154 }
+			}
+		}
+	},
+	{
+		"name": "orange",
+		"attachments": {
+			"bbox": {
+				"bbox-skin": {
+					"name": "bbox2",
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -19.15, -53.86, -18.19, 53.89, 20.94, 53.57, 19.01, -54.5 ]
+				}
+			},
+			"game/chair-waiting": {
+				"chair": { "name": "game/chair-orange", "scaleX": 0.5, "scaleY": 0.5, "width": 113, "height": 223 }
+			}
+		}
+	},
+	{
+		"name": "white",
+		"attachments": {
+			"bbox": {
+				"bbox-skin": {
+					"name": "bbox3",
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -19.15, -53.86, -18.19, 53.89, 20.94, 53.57, 19.01, -54.5 ]
+				}
+			},
+			"game/chair-waiting": {
+				"chair": { "name": "game/chair-white", "scaleX": 0.5, "scaleY": 0.5, "width": 112, "height": 224 }
+			}
+		}
+	},
+	{
+		"name": "yellow",
+		"attachments": {
+			"game/chair-waiting": {
+				"chair": { "name": "game/chair-yellow", "scaleX": 0.5, "scaleY": 0.5, "width": 113, "height": 223 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {},
+	"highlight": {
+		"slots": {
+			"game/chair-waiting": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "da7acb" }
+				]
+			}
+		}
+	},
+	"no-highlight": {
+		"slots": {
+			"game/chair-waiting": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	}
+}
+}

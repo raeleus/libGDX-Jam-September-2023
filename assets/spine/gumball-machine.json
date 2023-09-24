@@ -1,0 +1,74 @@
+{
+"skeleton": {
+	"hash": "kuSnNiQQThg",
+	"spine": "4.1.23",
+	"x": -21.5,
+	"y": -39.75,
+	"width": 43,
+	"height": 79.5,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/gumball-machine", "parent": "root", "length": 81.3, "rotation": 89.65, "x": -0.66, "y": -39.01 }
+],
+"slots": [
+	{ "name": "game/gumball-machine", "bone": "game/gumball-machine", "dark": "000000", "attachment": "game/gumball-machine" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -18.59, -36.63, -18.19, 35.02, 19.63, 35.02, 18.83, -36.63 ]
+				}
+			},
+			"game/gumball-machine": {
+				"game/gumball-machine": {
+					"x": 39.01,
+					"y": -0.42,
+					"scaleX": 0.5,
+					"scaleY": 0.5,
+					"rotation": -89.65,
+					"width": 86,
+					"height": 159
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {},
+	"highlight": {
+		"slots": {
+			"game/gumball-machine": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "da7acb" }
+				]
+			}
+		}
+	},
+	"processing": {
+		"bones": {
+			"game/gumball-machine": {
+				"scale": [
+					{
+						"curve": [ 0.111, 1, 0.222, 0.834, 0.111, 1, 0.222, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"x": 0.834,
+						"curve": [ 0.444, 0.834, 0.556, 1, 0.444, 1, 0.556, 1 ]
+					},
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	}
+}
+}
