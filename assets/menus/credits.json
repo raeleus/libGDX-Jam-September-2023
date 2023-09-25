@@ -11,7 +11,7 @@
 						"clazz": "com.badlogic.gdx.scenes.scene2d.ui.Label",
 						"name": "default"
 					},
-					"text": "This game was made by Raeleus.\\nCopyright Raymond \"Raeleus\" Buckley © 2023\\n\\nMusic by LMGLolo: fiverr.com/lorenzogmusic\\n\\nSpecial thanks to Lyze and DragonQueen for their awesome help!",
+					"text": "This game was made by Raeleus.\\nCopyright Raymond \"Raeleus\" Buckley © 2023\\n\\nMusic by LMGLolo: fiverr.com/lorenzogmusic\\n\\nSpecial thanks to Lyze, TEttinger, and DragonQueen for their awesome help!",
 					"textAlignment": 1,
 					"ellipsis": false,
 					"ellipsisString": "...",

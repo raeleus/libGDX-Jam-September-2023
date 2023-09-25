@@ -4,7 +4,7 @@
   "height": 576,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"goal": 3500, "time": 180, "text": "LEVEL 4\nTHIS IS THE LAST ONE\nI PROMISE", "needs": "white,blue,yellow,orange", "customer-delay": 5},
+  "values": {"goal": 7000, "time": 180, "text": "LEVEL 4\nTHIS IS THE LAST ONE\nI PROMISE", "needs": "white,blue,yellow,orange", "customer-delay": 5},
   "layers": [
     {
       "name": "nodes",
