@@ -179,5 +179,10 @@ public abstract class JamScreen implements InputProcessor, ControllerListener {
         }
         return false;
     }
-    
+
+    @Override
+    public boolean touchCancelled(int screenX, int screenY, int pointer, int button) {
+        return false;
+    }
+
 }

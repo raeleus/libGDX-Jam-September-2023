@@ -18,6 +18,8 @@
     <inherits name="com.badlogic.gdx.controllers.controllers-gwt"/>
     <inherits name="simple_graphs" />
     <inherits name="formic" />
+    <extend-configuration-property name="gdx.reflect.include" value="com.badlogic.gdx.audio.Sound"/>
+    <extend-configuration-property name="gdx.reflect.include" value="com.esotericsoftware.spine.Skin"/>
 	<entry-point class="com.ray3k.template.gwt.GwtLauncher" />
 	<set-configuration-property name="gdx.assetpath" value="../assets" />
 	<set-configuration-property name="xsiframe.failIfScriptTag" value="FALSE"/>
