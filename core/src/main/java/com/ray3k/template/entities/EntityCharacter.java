@@ -197,7 +197,7 @@ public class EntityCharacter extends Entity {
     public void act(float delta) {
         if (zebra == null) return;
         
-        if (mode != LEAVE && !dead) {
+        if (mode != LEAVE && !dead && !killMe) {
             heartTick -= delta;
             if (heartTick < 0) {
                 heartTick = HEART_TICK_DELAY;
